@@ -1,0 +1,26 @@
+{
+  "name": "dynamic-import-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "test": "yarn build && yarn start",
+    "build": "webpack",
+    "start": "serve dist -p 3001",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "isomorphic-fetch": "^2.2.1",
+    "webpack": "5.0.0-beta.24",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "preact": "^10.4.7"
+  }
+}
